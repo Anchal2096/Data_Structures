@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/ClionProjects/Data_Structures/DoublyLinkedList.h
+iostream
+-
+
+F:/ClionProjects/Data_Structures/Linked_List.h
+iostream
+-
+
+F:/ClionProjects/Data_Structures/main.cpp
+Linked_List.h
+F:/ClionProjects/Data_Structures/Linked_List.h
+DoublyLinkedList.h
+F:/ClionProjects/Data_Structures/DoublyLinkedList.h
+
