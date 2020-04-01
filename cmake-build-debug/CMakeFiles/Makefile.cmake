@@ -49,4 +49,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/DataStructures.dir/DependInfo.cmake"
   "CMakeFiles/Queues.dir/DependInfo.cmake"
+  "CMakeFiles/infix_to_postfix.dir/DependInfo.cmake"
+  "CMakeFiles/Quick_sort.dir/DependInfo.cmake"
   )

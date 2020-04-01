@@ -1,4 +1,6 @@
 F:/ClionProjects/Data_Structures/cmake-build-debug/CMakeFiles/DataStructures.dir
 F:/ClionProjects/Data_Structures/cmake-build-debug/CMakeFiles/Queues.dir
-F:/ClionProjects/Data_Structures/cmake-build-debug/CMakeFiles/edit_cache.dir
 F:/ClionProjects/Data_Structures/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+F:/ClionProjects/Data_Structures/cmake-build-debug/CMakeFiles/infix_to_postfix.dir
+F:/ClionProjects/Data_Structures/cmake-build-debug/CMakeFiles/Quick_sort.dir
+F:/ClionProjects/Data_Structures/cmake-build-debug/CMakeFiles/edit_cache.dir

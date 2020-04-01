@@ -57,17 +57,6 @@ CMAKE_BINARY_DIR = F:\ClionProjects\Data_Structures\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	echo >nul && "C:\Program Files\JetBrains\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache\fast: edit_cache
-
-.PHONY : edit_cache\fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -78,6 +67,17 @@ rebuild_cache:
 rebuild_cache\fast: rebuild_cache
 
 .PHONY : rebuild_cache\fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache\fast: edit_cache
+
+.PHONY : edit_cache\fast
 
 # The main all target
 all: cmake_check_build_system
@@ -137,6 +137,59 @@ Queues\fast:
 	$(MAKE) -f CMakeFiles\Queues.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Queues.dir\build
 .PHONY : Queues\fast
 
+#=============================================================================
+# Target rules for targets named infix_to_postfix
+
+# Build rule for target.
+infix_to_postfix: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) infix_to_postfix
+.PHONY : infix_to_postfix
+
+# fast build rule for target.
+infix_to_postfix\fast:
+	$(MAKE) -f CMakeFiles\infix_to_postfix.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\infix_to_postfix.dir\build
+.PHONY : infix_to_postfix\fast
+
+#=============================================================================
+# Target rules for targets named Quick_sort
+
+# Build rule for target.
+Quick_sort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) Quick_sort
+.PHONY : Quick_sort
+
+# fast build rule for target.
+Quick_sort\fast:
+	$(MAKE) -f CMakeFiles\Quick_sort.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Quick_sort.dir\build
+.PHONY : Quick_sort\fast
+
+infix_to_postfix.obj: infix_to_postfix.cpp.obj
+
+.PHONY : infix_to_postfix.obj
+
+# target to build an object file
+infix_to_postfix.cpp.obj:
+	$(MAKE) -f CMakeFiles\infix_to_postfix.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\infix_to_postfix.dir\infix_to_postfix.cpp.obj
+.PHONY : infix_to_postfix.cpp.obj
+
+infix_to_postfix.i: infix_to_postfix.cpp.i
+
+.PHONY : infix_to_postfix.i
+
+# target to preprocess a source file
+infix_to_postfix.cpp.i:
+	$(MAKE) -f CMakeFiles\infix_to_postfix.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\infix_to_postfix.dir\infix_to_postfix.cpp.i
+.PHONY : infix_to_postfix.cpp.i
+
+infix_to_postfix.s: infix_to_postfix.cpp.s
+
+.PHONY : infix_to_postfix.s
+
+# target to generate assembly for a file
+infix_to_postfix.cpp.s:
+	$(MAKE) -f CMakeFiles\infix_to_postfix.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\infix_to_postfix.dir\infix_to_postfix.cpp.s
+.PHONY : infix_to_postfix.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -191,6 +244,33 @@ main2.cpp.s:
 	$(MAKE) -f CMakeFiles\Queues.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Queues.dir\main2.cpp.s
 .PHONY : main2.cpp.s
 
+main3.obj: main3.cpp.obj
+
+.PHONY : main3.obj
+
+# target to build an object file
+main3.cpp.obj:
+	$(MAKE) -f CMakeFiles\Quick_sort.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Quick_sort.dir\main3.cpp.obj
+.PHONY : main3.cpp.obj
+
+main3.i: main3.cpp.i
+
+.PHONY : main3.i
+
+# target to preprocess a source file
+main3.cpp.i:
+	$(MAKE) -f CMakeFiles\Quick_sort.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Quick_sort.dir\main3.cpp.i
+.PHONY : main3.cpp.i
+
+main3.s: main3.cpp.s
+
+.PHONY : main3.s
+
+# target to generate assembly for a file
+main3.cpp.s:
+	$(MAKE) -f CMakeFiles\Quick_sort.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Quick_sort.dir\main3.cpp.s
+.PHONY : main3.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -199,14 +279,22 @@ help:
 	@echo ... depend
 	@echo ... DataStructures
 	@echo ... Queues
-	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... infix_to_postfix
+	@echo ... Quick_sort
+	@echo ... edit_cache
+	@echo ... infix_to_postfix.obj
+	@echo ... infix_to_postfix.i
+	@echo ... infix_to_postfix.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
 	@echo ... main2.obj
 	@echo ... main2.i
 	@echo ... main2.s
+	@echo ... main3.obj
+	@echo ... main3.i
+	@echo ... main3.s
 .PHONY : help
 
 

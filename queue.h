@@ -11,6 +11,7 @@ public:
     {
         int choice;
         while (1)
+
         {
             std::cout<<"1.Insert \n";
             std::cout<<"2.Delete\n";

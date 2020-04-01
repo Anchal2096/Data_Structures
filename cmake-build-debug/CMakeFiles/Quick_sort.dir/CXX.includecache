@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/ClionProjects/Data_Structures/main3.cpp
+quicksort.h
+F:/ClionProjects/Data_Structures/quicksort.h
+
+F:/ClionProjects/Data_Structures/quicksort.h
+iostream
+-
+
