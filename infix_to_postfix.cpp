@@ -66,13 +66,14 @@ public:
         return postfix;
     }
 
-    int main() {
 
-        string infix = "x^y/(5*z)+2";
-        cout << "Postfix Form Is: " << inToPost(infix) << endl;
-        return 0;
-    }
 };
-infix_to_postfix infix_to_postfixobj;
+
+int main() {
+    infix_to_postfix infix_to_postfixobj;
+    string infix = "x^y/(5*z)+2";
+    cout << "Postfix Form Is: " << infix_to_postfixobj.inToPost(infix) << endl;
+    return 0;
+}
 
 

@@ -226,9 +226,6 @@
 		<Unit filename="F:/ClionProjects/Data_Structures/infix_to_postfix.cpp">
 			<Option target="infix_to_postfix"/>
 		</Unit>
-		<Unit filename="F:/ClionProjects/Data_Structures/infix_to_postfix.h">
-			<Option target="infix_to_postfix"/>
-		</Unit>
 		<Unit filename="F:/ClionProjects/Data_Structures/main.cpp">
 			<Option target="DataStructures"/>
 		</Unit>
